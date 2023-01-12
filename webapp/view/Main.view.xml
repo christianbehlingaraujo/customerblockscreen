@@ -1,0 +1,192 @@
+<mvc:View 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m" 
+	xmlns:f="sap.f"
+	xmlns:core="sap.ui.core"
+	xmlns:grid="sap.ui.layout.cssgrid"
+	controllerName="com.itsgroup.brz.customerblockscreen.controller.Main" 
+	displayBlock="true">
+	<NavContainer id="navContainer">
+		<pages>
+			<Page 
+				id="contentPage"
+				backgroundDesign="Transparent"
+				showHeader="false"
+			>
+				<VBox class="contentImage">
+					<VBox class="contentGridList">
+						<f:GridList
+							id="gridListSimulation"
+							class="gridListBlocks"
+							items="{blocks>/itemsSimulation}"
+							headerText="{i18n>mainViewHeaderTextGridListSimulation}"
+							showSeparators="None"
+							visible="{blocks>/VisibleBlocksSimulation}"
+						>
+							<f:customLayout>
+								<grid:GridBoxLayout boxMinWidth="11.3rem" boxWidth="11.3rem"/>
+							</f:customLayout>
+
+							<f:GridListItem
+								id="gridListItemSimulation"
+								press="onPressGridListItem"
+								type="Active"
+								visible="{blocks>Visible}"
+							> 	
+								<VBox class="blockItem">
+									<VBox class="blockItemTitle">
+										<Text text="{blocks>title}" maxLines="2" class="blockItemText"/>
+									</VBox>
+
+									<VBox class="blockItemIcon">
+										<core:Icon
+											color="#FFFAFA"
+											size="24px"
+											src="{blocks>icon}"
+										/>
+									</VBox>
+								</VBox>
+							</f:GridListItem>
+						</f:GridList>
+
+						<f:GridList
+							id="gridListRegistrationData"
+							class="gridListBlocks"
+							items="{blocks>/itemsRegistrationData}"
+							headerText="{i18n>mainViewHeaderTextGridListRegistrationData}"
+							showSeparators="None"
+							visible="{blocks>/VisibleBlocksRegistrationData}"
+						>
+							<f:customLayout>
+								<grid:GridBoxLayout boxMinWidth="11.3rem" boxWidth="11.3rem"/>
+							</f:customLayout>
+
+							<f:GridListItem
+								id="gridListItemRegistrationData"
+								press="onPressGridListItem"
+								type="Active"
+								visible="{blocks>Visible}"
+							> 	
+								<VBox class="blockItem">
+									<VBox class="blockItemTitle">
+										<Text text="{blocks>title}" maxLines="2" class="blockItemText"/>
+									</VBox>
+
+									<VBox class="blockItemIcon">
+										<core:Icon
+											color="#FFFAFA"
+											size="24px"
+											src="{blocks>icon}"
+										/>
+									</VBox>
+								</VBox>
+							</f:GridListItem>
+						</f:GridList>
+
+						<f:GridList
+							id="gridListGeneral"
+							class="gridListBlocks"
+							items="{blocks>/itemsGeneral}"
+							headerText="{i18n>mainViewHeaderTextGridListGeneral}"
+							showSeparators="None"
+							visible="{blocks>/VisibleBlocksGeneral}"
+						>
+							<f:customLayout>
+								<grid:GridBoxLayout boxMinWidth="11.3rem" boxWidth="11.3rem"/>
+							</f:customLayout>
+
+							<f:GridListItem
+								id="gridListItemGeneral"
+								press="onPressGridListItem"
+								type="Active"
+								visible="{blocks>Visible}"
+							> 	
+								<VBox class="blockItem">
+									<VBox class="blockItemTitle">
+										<Text text="{blocks>title}" maxLines="2" class="blockItemText"/>
+									</VBox>
+
+									<VBox class="blockItemIcon">
+										<core:Icon
+											color="#FFFAFA"
+											size="24px"
+											src="{blocks>icon}"
+										/>
+									</VBox>
+								</VBox>
+							</f:GridListItem>
+						</f:GridList>
+
+						<f:GridList
+							id="gridListReport"
+							class="gridListBlocks"
+							items="{blocks>/itemsReport}"
+							headerText="{i18n>mainViewHeaderTextGridListReport}"
+							showSeparators="None"
+							visible="{blocks>/VisibleBlocksReport}"
+						>
+							<f:customLayout>
+								<grid:GridBoxLayout boxMinWidth="11.3rem" boxWidth="11.3rem"/>
+							</f:customLayout>
+
+							<f:GridListItem
+								id="gridListItemReport"
+								press="onPressGridListItem"
+								type="Active"
+								visible="{blocks>Visible}"
+							> 	
+								<VBox class="blockItem">
+									<VBox class="blockItemTitle">
+										<Text text="{blocks>title}" maxLines="2" class="blockItemText"/>
+									</VBox>
+
+									<VBox class="blockItemIcon">
+										<core:Icon
+											color="#FFFAFA"
+											size="24px"
+											src="{blocks>icon}"
+										/>
+									</VBox>
+								</VBox>
+							</f:GridListItem>
+						</f:GridList>
+
+						<f:GridList
+							id="gridListHelp"
+							class="gridListBlocks"
+							items="{blocks>/itemsHelp}"
+							headerText="{i18n>mainViewHeaderTextGridListHelp}"
+							showSeparators="None"
+							visible="{blocks>/VisibleBlocksHelp}"
+						>
+							<f:customLayout>
+								<grid:GridBoxLayout boxMinWidth="11.3rem" boxWidth="11.3rem"/>
+							</f:customLayout>
+
+							<f:GridListItem
+								id="gridListItemHelp"
+								press="onPressGridListItem"
+								type="Active"
+								visible="{blocks>Visible}"
+							> 	
+								<VBox class="blockItem">
+									<VBox class="blockItemTitle">
+										<Text text="{blocks>title}" maxLines="2" class="blockItemText"/>
+									</VBox>
+
+									<VBox class="blockItemIcon">
+										<core:Icon
+											color="#FFFAFA"
+											size="24px"
+											src="{blocks>icon}"
+										/>
+									</VBox>
+								</VBox>
+							</f:GridListItem>
+						</f:GridList>
+					</VBox>
+				</VBox>
+			</Page>
+		</pages>
+	</NavContainer>
+</mvc:View>

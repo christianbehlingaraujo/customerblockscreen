@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+}
+
+.sapMBarTitleAlignAuto .sapMBarPH {
+    justify-content: center;
+}
+
+.sapMListHdrText {
+    /*overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    font-size: 1.125rem;
+    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    color: #32363a;
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0 1rem;
+    background-color: transparent;*/
+    padding: 0;
+    border-bottom: 0;
+    color: #fff700;
+}
+
+.contentImage {
+    background-image: url("../img/Portal_Meu_BRZ.png");
+    width: 100%;
+    height: 100%;
+}
+
+.contentGridList {
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+
+    width: 100%;
+    height: 100%;
+    
+    background: transparent;
+
+    overflow: auto;
+}
+
+.gridListBlocks {
+    width: 100%;
+    height: 100%;
+    
+    background: transparent;
+}
+
+.gridListBlocks + .gridListBlocks {
+    margin-top: 3rem;
+}
+
+.blockItem {
+    align-items: center;
+    justify-content: space-between;
+
+    height: 11.3rem;
+
+    border-radius: 0.25rem;
+
+    background: rgba(238, 230, 14, .8);
+}
+
+.blockItemTitle {
+    align-items: flex-start;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    
+    width: 100%;
+    height: 100%;
+}
+
+.blockItemText {
+    font-size: 16px;
+}
+
+.blockItemIcon {
+    align-items: flex-start;
+    margin-left: 3rem;
+
+    width: 100%;
+    height: 100%;
+}
